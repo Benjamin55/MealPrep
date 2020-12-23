@@ -1,14 +1,25 @@
 <template>
-    <v-container fluid>
-        <v-layout>
-            <h1>Menu Page</h1>
-        </v-layout>
-    </v-container>
+    <div>
+        <navigation></navigation>
+        <home-plans></home-plans>
+        <meal-recipes></meal-recipes>
+    </div>
 </template>
+
 <script>
+import HomePlans from '@/components/HomePlans';
+import MealRecipes from '@/components/MealRecipes';
+import Navigation from '../components/Navigation';
+
 export default {
-    name: 'Menu'
+    name: 'Menu',
+    components: {
+        HomePlans,
+        MealRecipes,
+        Navigation
+    }
 };
 </script>
+
 <style scoped>
 </style>
